@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:quero_ir_app/Screens/Welcome/components/background.dart';
+import 'package:quero_ir_app/Components/background.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -10,11 +10,13 @@ class Body extends StatelessWidget {
     return Background(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[ 
-          const Text(
+          const Align(
+            child: Text(
             "Seja bem-vindo ao Quero Ir",
             style: TextStyle(fontWeight: FontWeight.bold)
-          ),
+          )),
           SvgPicture.asset(
             "assets/icons/chat.svg",
             height: size.height * 0.45,
