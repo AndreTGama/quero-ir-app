@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:quero_ir_app/Components/background.dart';
+import 'package:quero_ir_app/Components/background_main.dart';
 import 'package:quero_ir_app/Components/rounded_button.dart';
 import 'package:quero_ir_app/Screens/Login/login_screen.dart';
 import 'package:quero_ir_app/constants.dart';
@@ -9,7 +9,7 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Background(
+    return BackgroundMain(
       child: Center( 
         child: SingleChildScrollView(
           child: Column(
